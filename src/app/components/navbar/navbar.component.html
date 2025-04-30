@@ -1,1 +1,18 @@
-<p>navbar works!</p>
+<div class="w-full h-100px bg-white flex justify-between items-center py-2 px-[9%] p-[1rem] ">
+    <nav class="flex items-center gap-4 text-sm">
+        <button><i class="fa-solid fa-bars fa-xl"></i></button>
+        <div class="flex gap-1 border w-fit p-[8px] rounded-xl">
+            <a href="">Discover</a>
+            <a href="">Following</a>
+        </div>
+        <span class="flex gap-4">
+            <a routerLink="/news" routerLinkActive="text-[#7ca1df] font-bold">News</a>
+            <a routerLink="/entertainment" routerLinkActive="text-[#7ca1df] font-bold">Entertainment</a>
+            <a routerLink="/health" routerLinkActive="text-[#7ca1df] font-bold">Health</a>
+            <a routerLink="/lifestyle" routerLinkActive="text-[#7ca1df] font-bold">lifestyle</a>
+            <a routerLink="/autos" routerLinkActive="text-[#7ca1df] font-bold">Autos</a>
+        </span>
+    </nav>
+    <a routerLink="/personalize" class="border align-middle p-[10px] rounded-3xl text-sm"><i class="fa-solid fa-user-pen"></i>  Personalize</a>
+
+</div>
