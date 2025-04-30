@@ -1,6 +1,7 @@
+
 [build]
   command = "ng build"
-  publish = "dist/news-app/browser"
+  publish = "dist/news-app"  # 👈 No /browser here!
 
 [[redirects]]
   from = "/*"
