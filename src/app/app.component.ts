@@ -20,4 +20,9 @@ import { SubscriptionCardComponent } from './components/subscription-card/subscr
 })
 export class AppComponent {
   title = 'news-app';
+  sidebarVisible = false;
+
+  toggleSidebar() {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }
