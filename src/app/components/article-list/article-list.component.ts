@@ -19,7 +19,7 @@ export class ArticleListComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.getArticles().subscribe((data) => {
-      this.articles = data.slice(0, 5); // show only first 5 articles
+      this.articles = data.slice(0, 10);
     });
   }
 
@@ -28,7 +28,6 @@ export class ArticleListComponent implements OnInit {
   }
 
   showArticle(id: string) {
-    console.log('handled click');
     this.router.navigate(['/news', id]);
   }
 }
