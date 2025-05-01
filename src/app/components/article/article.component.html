@@ -1,7 +1,7 @@
 <div
   class="w-full p-4"
 >
-<div class="h-full flex flex-col  gap-4  border rounded-lg shadow-md p-4 bg-white">
+<div class="h-[92vh] flex flex-col  gap-4  border rounded-lg shadow-md p-4 bg-white lg:h-full">
   <div class="w-full flex flex-col gap-1 ">
       <button class="text-left ml-1 mb-1" routerLink="/news"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
       <p class="text-sm text-grey-500 text-right">{{ formatDate(article?.createdAt) }}</p>
@@ -9,7 +9,7 @@
       <img
         [src]="article?.image"
         alt=""
-        class=" h-52 w-full object-contain mb-2 rounded-xl p-4"
+        class="h-52 w-full object-fill mb-2 border shadow-md rounded-xl p-4 md:object-contain md:shadow-none"
       />
     </div>
     <p class="text-gray-700 mb-2 text-xl text-justify">{{ article?.description }}</p>
