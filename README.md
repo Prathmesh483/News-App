@@ -4,7 +4,7 @@ A responsive Angular 16 application styled with Tailwind CSS that displays categ
 
 ## 🌐 Live Demo
 
-🔗 [View on Netlify](todaysglassnews.netlify.app)
+🔗 [View on Netlify](https://todaysglassnews.netlify.app)
 
 ---
 
