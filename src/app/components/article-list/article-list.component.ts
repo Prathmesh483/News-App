@@ -28,6 +28,7 @@ export class ArticleListComponent implements OnInit {
   }
 
   showArticle(id: string) {
-    this.router.navigate(['/news', id]);
+    // this.router.navigate(['/news', id]);
+    window.open(`/news/${id}`, '_blank');
   }
 }
