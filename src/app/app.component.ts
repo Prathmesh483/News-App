@@ -28,11 +28,9 @@ export class AppComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // Listen to the router's navigation events
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        // Check the current route to hide sidebar on `/news/:id`
         const currentRoute = this.router.url;
         if (currentRoute.includes('/news/')) {
           this.largeSidebarVisible = false;
