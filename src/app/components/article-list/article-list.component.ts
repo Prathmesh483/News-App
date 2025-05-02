@@ -19,7 +19,7 @@ export class ArticleListComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.getArticles().subscribe((data) => {
-      this.articles = data.slice(0, 10);
+      this.articles = data.slice(0, 20);
     });
   }
 
