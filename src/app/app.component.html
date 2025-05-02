@@ -16,9 +16,10 @@
     </app-sidebar>
 
     <app-sidebar *ngIf="largeSidebarVisible"
-      class="hidden lg:block lg:w-[40%] mt-[50px] xl:block xl:w-[22%]"
+      class="hidden lg:block lg:w-[40%] mt-[50px] xl:block xl:w-[20%]"
     ></app-sidebar>
-    <div *ngIf="!largeSidebarVisible" class="hidden xl:w-[10%]"></div>
+
+    <div *ngIf="!largeSidebarVisible" class="w-[10%]"><p>hello</p></div>
 
     <div class="w-full h-full mt-[57px] xl:block xl:w-[50%] p-2">
       <router-outlet></router-outlet>
