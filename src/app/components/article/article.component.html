@@ -1,11 +1,11 @@
 <div
-  class="w-full p-4"
+  class="w-full h-fit p-4 xl:h-fit"
 >
-<div class="h-[92vh] flex flex-col  gap-4  border rounded-lg shadow-md p-4 bg-white lg:h-full">
+<div class="h-fit flex flex-col  gap-4  border rounded-lg shadow-md p-4 bg-white lg:h-full">
   <div class="w-full flex flex-col gap-1 ">
       <button class="text-left ml-1 mb-1" routerLink="/news"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
       <p class="text-sm text-grey-500 text-right">{{ formatDate(article?.createdAt) }}</p>
-      <h2 class="text-5xl font-bold mb-2">{{ article?.title }}</h2>
+      <h2 class="text-2xl xl:text-5xl font-bold mb-2">{{ article?.title }}</h2>
       <img
         [src]="article?.image"
         alt=""
