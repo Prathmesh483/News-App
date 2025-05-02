@@ -15,20 +15,21 @@
     >
     </app-sidebar>
 
-    <app-sidebar
-      class="hidden lg:block lg:w-[30%] mt-[50px] xl:block xl:w-[20%]"
+    <app-sidebar *ngIf="largeSidebarVisible"
+      class="hidden lg:block lg:w-[40%] mt-[50px] xl:block xl:w-[22%]"
     ></app-sidebar>
+    <div *ngIf="!largeSidebarVisible" class="hidden xl:w-[10%]"></div>
 
-    <div class="w-fit mt-[50px] lg:block lg:w-[70%] xl:w-[50%]">
+    <div class="w-full h-full mt-[57px] xl:block xl:w-[50%] p-2">
       <router-outlet></router-outlet>
     </div>
 
     <app-subscription-card
-      class="hidden w-0 xl:block xl:w-fit px-4 mt-[45px]"
+      class="hidden w-0 xl:block xl:w-[30%] px-4 mt-[45px] ml-8"
     ></app-subscription-card>
   </div>
   <button
-    *ngIf="!sidebarVisible"
+    *ngIf="toggleVisible"
     class="fixed bottom-6 w-fit left-4 bg-[#4ca3c5] rounded-3xl p-2 lg:hidden"
     (click)="toggleSidebar()"
   >
